@@ -14,7 +14,7 @@ steps:
 
   inputs:
 
-    azureSubscription: 'bmoore sp'
+    azureSubscription: 'demo-deploy-sp'
 
     ScriptPath: 'Deploy-AzTemplate.ps1'
 
