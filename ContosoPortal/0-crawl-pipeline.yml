@@ -6,7 +6,7 @@ steps:
   displayName: 'Stage Files to Azure'
   inputs:
     SourcePath: ContosoPortal
-    azureSubscription: 'bmoore sp'
+    azureSubscription: 'demo-deploy-sp'
     Destination: AzureBlob
     storage: stageceaedbb7b8274195b55
     ContainerName: 'crawl-staging'
@@ -17,7 +17,7 @@ steps:
 - task: AzureResourceGroupDeployment@2
   displayName: 'Deploy Template'
   inputs:
-    azureSubscription: 'bmoore sp'
+    azureSubscription: 'demo-deploy-sp'
     resourceGroupName: CrawlDemoGroup
     location: 'East US 2'
     templateLocation: 'URL of the file'
